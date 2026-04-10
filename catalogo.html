@@ -3,106 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.html">
-    <title>Catálogo Campus Shop</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <title>Campus Shop - Catálogo</title>
 </head>
 <body>
-    <h1>Catálogo Campus Shop</h1>
+    <header class="top-header">
+        <div class="buscar-logo">🔍</div>
+        <h1>Catálogo</h1>
+        <div class="carrito-logo">🛒</div>
+    </header>
 
-    <div class="abrigos">
-        <div class="abrigo-1">
-            <img src="images/abrigo1.png" alt="abrigo1">
-            <h5>Abrigo Gris para mujer</h5>
-            <h6>$110.000 COP</h6>
+    <main class="main-content">
+        <div style="display: flex; gap: 10px; margin-bottom: 20px;">
+            <span style="background: var(--primary-color); color: white; padding: 6px 12px; border-radius: 20px; font-size: 0.8rem; box-shadow: var(--shadow-soft);">Talla 🔽</span>
+            <span style="background: var(--primary-color); color: white; padding: 6px 12px; border-radius: 20px; font-size: 0.8rem; box-shadow: var(--shadow-soft);">Color 🔽</span>
+            <span style="background: var(--primary-color); color: white; padding: 6px 12px; border-radius: 20px; font-size: 0.8rem; box-shadow: var(--shadow-soft);">Precio 🔽</span>
         </div>
 
-        <div class="abrigo-2">
-            <img src="images/abrigo2.png" alt="abrigo2">
-            <h5>Abrigo Negro para mujer</h5>
-            <h6>$100.000 COP</h6>
-        </div>
+        <section class="productos-catalogo">
+            1
+            <article class="tarjeta-producto">
+                <span class="etiqueta oferta">Oferta</span>
+                <img src="images/abrigo1.png" alt="Abrigo" class="imagen-producto">
+                <h3 class="titulo-producto">Abrigo Gris para mujer</h3>
+                <p class="precio-antes-producto">$200.000 COP</p> <!-- Esto va en rojo -->
+                <p class="precio-producto">$100.000 COP</p>
+                <a href="carrito.html" class="btn-add-cart">Añadir al carrito🛒</a>
+            </article>
+            2
+            <article class="tarjeta-producto">
+                <span class="etiqueta stock">Poco Stock</span>
+                <img src="images/abrigo2.png" alt="Abrigo" class="imagen-producto">
+                <h3 class="titulo-producto">Abrigo Negro para mujer</h3>
+                <p class="precio-producto">$110.000 COP</p>
+                <a href="carrito.html" class="btn-add-cart">Añadir al carrito🛒</a>
+            </article>
+            3
+            <article class="tarjeta-producto">
+                <img src="images/abrigo3.png" alt="Abrigo" class="imagen-producto">
+                <h3 class="titulo-producto">Abrigo Negro Largo para mujer</h3>
+                <p class="precio-producto">$120.000 COP</p>
+                <a href="carrito.html" class="btn-add-cart">Añadir al carrito🛒</a>
+            </article>
+            4
+            <article class="tarjeta-producto">
+                <span class="etiqueta oferta">Oferta</span>
+                <img src="images/abrigo4.png" alt="Abrigo" class="imagen-producto">
+                <h3 class="titulo-producto">Abrigo Azul Oscuro para hombre</h3>
+                <p class="precio-antes-producto">$150.000 COP</p> <!-- Esto va en rojo -->
+                <p class="precio-producto">$80.000 COP</p>
+                <a href="carrito.html" class="btn-add-cart">Añadir al carrito🛒</a>
+            </article>
+            5
+            <article class="tarjeta-producto">
+                <span class="etiqueta stock">Poco Stock</span>
+                <img src="images/abrigo5.png" alt="Abrigo" class="imagen-producto">
+                <h3 class="titulo-producto">Abrigo Negro para hombre</h3>
+                <p class="precio-producto">$220.000 COP</p>
+                <a href="carrito.html" class="btn-add-cart">Añadir al carrito🛒</a>
+            </article>
+            6
+            <article class="tarjeta-producto">
+                <img src="images/camiseta1.png" alt="Camiseta" class="imagen-producto">
+                <h3 class="titulo-producto">Camiseta Blanca con estampado The Horizon para mujer</h3>
+                <p class="precio-producto">$60.000 COP</p>
+                <a href="carrito.html" class="btn-add-cart">Añadir al carrito🛒</a>
+            </article>
+            7
+            <article class="tarjeta-producto">
+                <span class="etiqueta oferta">Oferta</span>
+                <img src="images/camiseta2.png" alt="Camiseta" class="imagen-producto">
+                <h3 class="titulo-producto">Camiseta con estampado 1957 para mujer</h3>
+                <p class="precio-antes-producto">$70.000 COP</p> <!-- Esto va en rojo -->
+                <p class="precio-producto">$40.000 COP</p>
+                <a href="carrito.html" class="btn-add-cart">Añadir al carrito🛒</a>
+            </article>
+            8
+            <article class="tarjeta-producto">
+                <span class="etiqueta stock">Poco Stock</span>
+                <img src="images/camiseta3.png" alt="Camiseta" class="imagen-producto">
+                <h3 class="titulo-producto">Camiseta estampado margarita para mujer</h3>
+                <p class="precio-producto">$60.000 COP</p>
+                <a href="carrito.html" class="btn-add-cart">Añadir al carrito🛒</a>
+            </article>
+            9
+            <article class="tarjeta-producto">
+                <img src="images/camiseta4.png" alt="Camiseta" class="imagen-producto">
+                <h3 class="titulo-producto">Camiseta Azul para hombre</h3>
+                <p class="precio-producto">$50.000 COP</p>
+                <a href="carrito.html" class="btn-add-cart">Añadir al carrito🛒</a>
+            </article>
+            10
+            <article class="tarjeta-producto">
+                <img src="images/camiseta5.png" alt="Camiseta" class="imagen-producto">
+                <h3 class="titulo-producto">Camiseta Negra para hombre</h3>
+                <p class="precio-producto">$50.000 COP</p>
+                <a href="carrito.html" class="btn-add-cart">Añadir al carrito🛒</a>
+            </article>
+            11
+            <article class="tarjeta-producto">
+                <span class="etiqueta stock">Poco Stock</span>
+                <img src="images/pantalon1.png" alt="Pantalon" class="imagen-producto">
+                <h3 class="titulo-producto">Pantalón Blanco para mujer</h3>
+                <p class="precio-producto">$100.000 COP</p>
+                <a href="carrito.html" class="btn-add-cart">Añadir al carrito🛒</a>
+            </article>
+            12
+            <article class="tarjeta-producto">
+                <img src="images/pantalon2.png" alt="Pantalon" class="imagen-producto">
+                <h3 class="titulo-producto">Pantalon Negro para mujer</h3>
+                <p class="precio-producto">$90.000 COP</p>
+                <a href="carrito.html" class="btn-add-cart">Añadir al carrito🛒</a>
+            </article>
+            13
+            <article class="tarjeta-producto">
+                <span class="etiqueta oferta">Oferta</span>
+                <img src="images/pantalon3.png" alt="Pantalon" class="imagen-producto">
+                <h3 class="titulo-producto">Jean Azul Claro para mujer</h3>
+                <p class="precio-antes-producto">$120.000 COP</p> <!-- Esto va en rojo -->
+                <p class="precio-producto">$80.000 COP</p>
+                <a href="carrito.html" class="btn-add-cart">Añadir al carrito🛒</a>
+            </article>
+            14
+            <article class="tarjeta-producto">
+                <img src="images/pantalon4.png" alt="Pantalon" class="imagen-producto">
+                <h3 class="titulo-producto">Blue Jean para hombre</h3>
+                <p class="precio-producto">$90.000 COP</p>
+                <a href="carrito.html" class="btn-add-cart">Añadir al carrito🛒</a>
+            </article>
+            15
+            <article class="tarjeta-producto">
+                <span class="etiqueta stock">Poco Stock</span>
+                <img src="images/pantalon5.png" alt="Pantalon" class="imagen-producto">
+                <h3 class="titulo-producto">Pantalon Verde Oscuro para hombre</h3>
+                <p class="precio-producto">$110.000 COP</p>
+                <a href="carrito.html" class="btn-add-cart">Añadir al carrito🛒</a>
+            </article>
 
-        <div class="abrigo-3">
-            <img src="images/abrigo3.png" alt="abrigo3">
-            <h5>Abrigo Negro Largo para mujer</h5>
-            <h6>$120.000 COP</h6>
-        </div>
+        </section>
+    </main>
 
-        <div class="abrigo-4">
-            <img src="images/abrigo4.png" alt="abrigo4">
-            <h5>Abrigo Azul Oscuro para hombre</h5>
-            <h6>$99.900 COP</h6>
-        </div>
-
-        <div class="abrigo-5">
-            <img src="images/abrigo5.png" alt="abrigo5">
-            <h5>Abrigo Negro para hombre</h5>
-            <h6>$140.000 COP</h6>
-        </div>
-    </div>
-
-    <div class="camisetas">
-        <div class="camiseta-1">
-            <img src="images/camiseta1.png" alt="camiseta1">
-            <h5>Camiseta Blanca con estampado The Horizon para mujer</h5>
-            <h6>$60.000 COP</h6>
-        </div>
-
-        <div class="camiseta-2">
-            <img src="images/camiseta2.png" alt="camiseta-2">
-            <h5>Camiseta con estampado 1957 para mujer</h5>
-            <h6>$70.000 COP</h6>
-        </div>
-
-        <div class="camiseta-3">
-            <img src="images/camiseta3.png" alt="camiseta-3">
-            <h5>Camiseta estampado margarita para mujer</h5>
-            <h6>$80.000 COP</h6>
-        </div>
-
-        <div class="camiseta-4">
-            <img src="images/camiseta4.png" alt="camiseta-4">
-            <h5>Camiseta Azul para hombre</h5>
-            <h6>$50.000 COP</h6>
-        </div>
-
-        <div class="camiseta-5">
-            <img src="images/camiseta5.png" alt="camiseta-5">
-            <h5>Camiseta Negra para hombre</h5>
-            <h6>$50.000 COP</h6>
-        </div>
-    </div>
-
-    <div class="pantalones">
-        <div class="pantalon-1">
-            <img src="images/pantalon1.png" alt="pantalon-1">
-            <h5>Pantalón Blanco para mujer</h5>
-            <h6>$100.000 COP</h6>
-        </div>
-
-        <div class="pantalon-2">
-            <img src="images/pantalon2.png" alt="pantalon-2">
-            <h5>Pantalon Negro para mujer</h5>
-            <h6>90.000 COP</h6>
-        </div>
-
-        <div class="pantalon-3">
-            <img src="images/pantalon3.png" alt="pantalon-3">
-            <h5>Jean Azul Claro para mujer</h5>
-            <h6>$110.000 COP</h6>
-        </div>
-
-        <div class="pantalon-4">
-            <img src="images/pantalon4.png" alt="pantalon-4">
-            <h5>Blue Jean para hombre</h5>
-            <h6>$100.000 COP</h6>
-        </div>
-
-        <div class="pantalon-5">
-            <img src="images/pantalon5.png" alt="pantalon-5">
-            <h5>Pantalon Verde Oscuro para hombre</h5>
-            <h6>$110.000 COP</h6>
-        </div>
-    </div>
+    <nav class="bottom-nav">
+        <a href="index.html" class="bottom-nav-item active">🏠<br>Inicio</a>
+        <a href="catalogo.html" class="bottom-nav-item">📚<br>Categorías</a>
+        <a href="carrito.html" class="bottom-nav-item">🛒<br>Carrito</a>
+        <a href="#favoritos" class="bottom-nav-item">♥️<br>Favoritos</a>
+        <a href="perfil.html" class="bottom-nav-item">👤<br>Perfil</a>
+    </nav>
 </body>
 </html>
