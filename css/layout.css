@@ -14,6 +14,14 @@
     color: var(--primary-color);
 }
 
+.header-menu-lateral{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 15px;
+}
+
 main{
     padding-bottom: 80px;
 }

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <title>Campus Shop - Historial de Pedidos</title>
+</head>
+<body>
+    <header class="header-principal">
+        <a href="perfil.html" class="flecha-logo">⬅️</a>
+        <h2 style="font-size: 1.2rem; color: var(--text-main);">Historial de Pedidos</h2>
+        <div style="width: 24px;"></div>
+    </header>
+
+    <main class="main-content">
+        <div class="body-pedido">
+            <div class="tarjeta-pedido">
+                <div class="pedido-header">
+                    <div>
+                        <p class="fecha-pedido">15 de Mayo de 2025</p>
+                        <p class="id-pedido">Orden #12345</p>
+                    </div>
+                    <span class="etiqueta-historial entregado">Entregado</span>
+                </div>
+                
+                <div class="pedido-info-footer">
+                    <div class="total">
+                        <span>Total:</span>
+                        <p>$100.000 COP</p>
+                    </div>
+                    <br>
+                    <button class="btn-pedido">Ver detalles</button>
+                </div>
+            </div>
+
+            <div class="tarjeta-pedido">
+                <div class="pedido-header">
+                    <div>
+                        <p class="fecha-pedido">3 de Enero de 2026</p>
+                        <p class="id-pedido">Orden #45678</p>
+                    </div>
+                    <span class="etiqueta-historial cancelado">Cancelado</span>
+                </div>
+                
+                <div class="pedido-info-footer">
+                    <div class="total">
+                        <span>Total:</span>
+                        <p>$500.000 COP</p>
+                    </div>
+                    <button class="btn-pedido">Ver detalles</button>
+                </div>
+            </div>
+
+            <div class="tarjeta-pedido">
+                <div class="pedido-header">
+                    <div>
+                        <p class="fecha-pedido">13 de Abril de 2026</p>
+                        <p class="id-pedido">Orden #10203</p>
+                    </div>
+                    <span class="etiqueta-historial camino">En camino</span>
+                </div>
+
+                <div class="pedido-info-footer">
+                    <div class="total">
+                        <span>Total:</span>
+                        <p>$410.000 COP</p>
+                    </div>
+                    <button class="btn-pedido">Ver detalles</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bottom-nav">
+        <a href="index.html" class="bottom-nav-item active">🏠<br>Inicio</a>
+        <a href="catalogo.html" class="bottom-nav-item">📚<br>Categorías</a>
+        <a href="vacio.html" class="bottom-nav-item">🛒<br>Carrito</a>
+        <a href="#favoritos" class="bottom-nav-item">♥️<br>Favoritos</a>
+        <a href="perfil.html" class="bottom-nav-item">👤<br>Perfil</a>
+    </footer>
+</body>
+</html>

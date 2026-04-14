@@ -1,3 +1,93 @@
+.menu-lateral-index{
+    display: none;
+}
+
+.menu-logo{
+    font-size: 1.8rem;
+    cursor: pointer;
+    position: absolute;
+    left: 20px;
+    z-index: 100;
+    color: var(--text-main);
+}
+
+.titulo-menu{
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--text-main);
+    margin: 0;
+    color: white;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: -280px;
+    width: 260px;
+    height: 100%;
+    background: rgb(0, 0, 116);
+    z-index: 1000;
+    transition: 0.3s ease;
+    box-shadow: var(--shadow-soft);
+    padding: 20px;
+}
+
+.sidebar-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.sidebar-logo{
+    width: 100px;
+}
+
+.btn-cerrar{
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: 2px solid white;
+    padding: 4px;
+    border-radius: var(--radius-btn);
+    color: white;
+}
+
+.menu-links{
+    list-style: none;
+    padding: 0;
+}
+
+.menu-links li{
+    margin-bottom: 20px;
+}
+
+.menu-links a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 1.1rem;
+    display: block;
+}
+
+#menu-lateral:checked ~ .sidebar{
+    left: 0;
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-card);
+    display: none;
+    z-index: 900;
+}
+
+#menu-lateral:checked ~ .overlay{
+    display: block;
+}
+
 .search-bar{
     width: 100%;
     padding: 12px 16px;
@@ -396,5 +486,99 @@
     padding: 10px;
     border-radius: 8px;
     margin-top: 10px;
+    cursor: pointer;
+}
+
+.tarjeta-pedido{
+    background: white;
+    border-radius: var(--radius-box);
+    padding: 16px;
+    margin-bottom: 16px;
+    box-shadow: var(--shadow-soft);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.pedido-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid #f1f1f1;
+    padding-bottom: 10px;
+}
+
+.fecha-pedido{
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin: 0;
+}
+
+.id-pedido{
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.etiqueta-historial{
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.etiqueta-historial.entregado{
+    background: #e7f7ed;
+    color: #2ecc71;
+}
+.etiqueta-historial.cancelado{
+    background: #fdeaea;
+    color: #e74c3c;
+}
+.etiqueta-historial.camino{
+    background: #ffffe2;
+    color: #ffdf2b;
+}
+
+.pedido-info-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.total{
+    margin-top: 5px;
+}
+
+.total span{
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.total p{
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin: 0;
+    color: var(--text-main);
+}
+
+.btn-pedido{
+    background: white;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    padding: 10px 20px;
+    border-radius: var(--radius-btn);
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 0.85rem;
+    margin-top: 15px;
+}
+
+.btn-pedido:hover{
+    background: var(--primary-color);
+    color: white;
+    font-weight: bolder;
+    transition: 1.5s ease;
     cursor: pointer;
 }
