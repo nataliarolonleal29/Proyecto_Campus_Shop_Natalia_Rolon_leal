@@ -77,18 +77,18 @@ Se implementó una estructura basada en HTML5 y CSS organizada correctamente. La
 ### Estructura de Archivos
 Es importante mantener este orden para que la aplicación cargue correctamente:
 /
-├── index.html           # Página de inicio
-├── catalogo.html        # Productos
-├── producto.html        # Detalles y descripción
-├── carrito.html         # Resumen de compra
-├── checkout.html        # Proceso de pago
-├── vacio.html           # Carrito Vacio
+├── index.html
+├── catalogo.html
+├── producto.html
+├── carrito.html
+├── checkout.html
+├── vacio.html
 ├── css/
-│   ├── base.css         # Variables root
-│   ├── layout.css       # Estructura (Header, Nav)
-│   ├── components.css   # Botones y tarjetas
-│   └── responsive.css   # Adaptación a dispositivos
-└── images/              # Imágenes
+│   ├── base.css
+│   ├── layout.css
+│   ├── components.css
+│   └── responsive.css
+└── images/
 
 ### Reflexión Final
 Este proyecto demuestra cómo una organización sólida del código CSS y una estructura HTML bien planeada pueden crear una experiencia de usuario de alta calidad. El mayor aprendizaje fue el manejo de Flexbox para resolver problemas de alineación y la importancia de separar los estilos en módulos (Base, Layout, Components) para escalar el diseño de manera eficiente. Campus Shop es ahora una base sólida para integrar en el futuro un sistema de Back-end real.
