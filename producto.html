@@ -3,35 +3,559 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Campus Shop - Producto</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>Campus Shop - Detalles del Producto</title>
 </head>
-<body>
-    <main class="main-content">
-        <header class="header-principal">
-            <div class="flecha-logo">⬅️</div>
-            <h1>Detalles del Producto</h1>
-            <div class="carrito-logo">🛒</div>
-        </header>
+<body class="body-productos" style="background-color: #f8f9fa;">
+    <header class="header-principal">
+        <a href="catalogo.html" class="flecha-logo" style="text-decoration: none;">⬅️</a>
+        <h1 class="titulo-index" style="font-size: 1.2rem;">Detalles del Producto</h1>
+        <a href="carrito.html" class="carrito-logo">🛒</a>
+    </header>
 
-        <div style="text-align: center; margin-top: 20px;">
-            <img src="images/abrigo1.png" alt="abrigo" style="width: 100%; border-radius: 20px; background: #eee;">
-        </div>
+    <main class="main-producto">
+        <!-- producto 1 -->
+        <section class="caja-producto">
+            <div class="contenedor-imagen-producto">
+                <img src="images/abrigo1.png" alt="abrigo" class="img-producto-detalle">
+            </div>
 
-        <h2 style="margin-top: 20px;">Abrigo Gris para mujer</h2>
-        <p class="precio-antes-producto">$200.000 COP</p>
-        <p style="font-size: 1.5rem; font-weight: bold; color: var(--primary-color);">$100.000 COP</p>
+            <div class="contenedor-info-producto">
+                <h2 class="titulo-producto-detalle">Abrigo Gris para mujer</h2>
+                <p class="precio-producto-detalle">$100.000 COP</p>
 
-        <p style="color: var(--text-muted); margin: 15px 0;">Abrigo ideal para días laborales, eventos especiales y/o días casuales. Tela delicada, lavar a mano o en ciclo delicado en lavadora. Oferta disponible hasta el 30 de Abril.</p>
+                <div class="descripcion">
+                    <h3>Descripción</h3>
+                    <p>Elegante y versátil. Ideal para protegerte del frío en el campus sin perder el estilo. Confeccionado en tela suave y abrigadora.</p>
+                </div>
+                <div class="seccion-tallas">
+                    <h3>Tallas</h3>
+                    <div class="selector-tallas">
+                        <input type="radio" name="talla" id="talla-s" class="radio-talla">
+                        <label for="talla-s" class="label-talla">S</label>
 
-        <div style="margin-bottom: 20px;">
-            <p><strong>Talla</strong></p>
-            <button style="padding: 10px 15px; border-radius: 5px; border: 1px solid #ccc;">S</button>
-            <button style="padding: 10px 15px; border-radius: 5px; border: 2px solid var(--primary-color); background: var(--primary-light);">M</button>
-            <button style="padding: 10px 15px; border-radius: 5px; border: 1px solid #ccc;">L</button>
-        </div>
+                        <input type="radio" name="talla" id="talla-m" class="radio-talla" checked>
+                        <label for="talla-m" class="label-talla">M</label>
 
-        <button class="btn-kart">Agregar al carrito</button>
+                        <input type="radio" name="talla" id="talla-l" class="radio-talla">
+                        <label for="talla-l" class="label-talla">L</label>
 
+                        <input type="radio" name="talla" id="talla-xl" class="radio-talla">
+                        <label for="talla-xl" class="label-talla">XL</label>
+                    </div>
+                </div>
+            </div>
+            <footer class="comprar">
+                <button class="btn-kart">Agregar al carrito</button>
+            </footer>
+        </section>
+        <!-- producto 2 -->
+
+        <section class="caja-producto">
+            <div class="imagen-producto">
+                <img src="images/abrigo2.png" alt="abrigo" class="img-producto-detalle">
+            </div>
+
+            <div class="contenedor-info-producto">
+                <h2 class="titulo-producto-detalle">Abrigo Negro para mujer</h2>
+                <p class="precio-producto-detalle">$110.000 COP</p>
+
+                <div class="descripcion">
+                    <h3>Descripción</h3>
+                    <p>Un clásico indispensable. Combina con cualquier outfit y te brinda la máxima calidez durante las clases matutinas.</p>
+                </div>
+                <div class="seccion-tallas">
+                    <h3>Tallas</h3>
+                    <div class="selector-tallas">
+                        <input type="radio" name="talla" id="talla-s" class="radio-talla">
+                        <label for="talla-s" class="label-talla">S</label>
+
+                        <input type="radio" name="talla" id="talla-m" class="radio-talla" checked>
+                        <label for="talla-m" class="label-talla">M</label>
+
+                        <input type="radio" name="talla" id="talla-l" class="radio-talla">
+                        <label for="talla-l" class="label-talla">L</label>
+
+                        <input type="radio" name="talla" id="talla-xl" class="radio-talla">
+                        <label for="talla-xl" class="label-talla">XL</label>
+                    </div>
+                </div>
+            </div>
+            <footer class="comprar">
+                <button class="btn-kart">Agregar al carrito</button>
+            </footer>
+        </section>
+        <!-- producto 3 -->
+
+        <section class="caja-producto">
+            <div class="imagen-producto">
+                <img src="images/abrigo3.png" alt="abrigo" class="img-producto-detalle">
+            </div>
+
+            <div class="contenedor-info-producto">
+                <h2 class="titulo-producto-detalle">Abrigo Negro Largo para mujer</h2>
+                <p class="precio-producto-detalle">$120.000 COP</p>
+
+                <div class="descripcion">
+                    <h3>Descripción</h3>
+                    <p>Estilo sofisticado y cobertura total. Perfecto para los días más helados y para destacar con un look moderno.</p>
+                </div>
+                <div class="seccion-tallas">
+                    <h3>Tallas</h3>
+                    <div class="selector-tallas">
+                        <input type="radio" name="talla" id="talla-s" class="radio-talla">
+                        <label for="talla-s" class="label-talla">S</label>
+
+                        <input type="radio" name="talla" id="talla-m" class="radio-talla" checked>
+                        <label for="talla-m" class="label-talla">M</label>
+
+                        <input type="radio" name="talla" id="talla-l" class="radio-talla">
+                        <label for="talla-l" class="label-talla">L</label>
+
+                        <input type="radio" name="talla" id="talla-xl" class="radio-talla">
+                        <label for="talla-xl" class="label-talla">XL</label>
+                    </div>
+                </div>
+            </div>
+            <footer class="comprar">
+                <button class="btn-kart">Agregar al carrito</button>
+            </footer>
+        </section>
+        <!-- producto 4 -->
+
+        <section class="caja-producto">
+            <div class="imagen-producto">
+                <img src="images/abrigo4.png" alt="abrigo" class="img-producto-detalle">
+            </div>
+
+            <div class="contenedor-info-producto">
+                <h2 class="titulo-producto-detalle">Abrigo Azul Oscuro para hombre</h2>
+                <p class="precio-producto-detalle">$80.000 COP</p>
+
+                <div class="descripcion">
+                    <h3>Descripción</h3>
+                    <p>Diseño urbano y resistente. Tu mejor aliado para el clima impredecible de la universidad.</p>
+                </div>
+                <div class="seccion-tallas">
+                    <h3>Tallas</h3>
+                    <div class="selector-tallas">
+                        <input type="radio" name="talla" id="talla-s" class="radio-talla">
+                        <label for="talla-s" class="label-talla">S</label>
+
+                        <input type="radio" name="talla" id="talla-m" class="radio-talla" checked>
+                        <label for="talla-m" class="label-talla">M</label>
+
+                        <input type="radio" name="talla" id="talla-l" class="radio-talla">
+                        <label for="talla-l" class="label-talla">L</label>
+
+                        <input type="radio" name="talla" id="talla-xl" class="radio-talla">
+                        <label for="talla-xl" class="label-talla">XL</label>
+                    </div>
+                </div>
+            </div>
+            <footer class="comprar">
+                <button class="btn-kart">Agregar al carrito</button>
+            </footer>
+        </section>
+        <!-- producto 5 -->
+
+        <section class="caja-producto">
+            <div class="imagen-producto">
+                <img src="images/abrigo5.png" alt="abrigo" class="img-producto-detalle">
+            </div>
+
+            <div class="contenedor-info-producto">
+                <h2 class="titulo-producto-detalle">Abrigo Negro para hombre</h2>
+                <p class="precio-producto-detalle">$220.000 COP</p>
+
+                <div class="descripcion">
+                    <h3>Descripción</h3>
+                    <p>Minimalista, cómodo y súper abrigador. Un básico que no puede faltar en tu clóset.</p>
+                </div>
+                <div class="seccion-tallas">
+                    <h3>Tallas</h3>
+                    <div class="selector-tallas">
+                        <input type="radio" name="talla" id="talla-s" class="radio-talla">
+                        <label for="talla-s" class="label-talla">S</label>
+
+                        <input type="radio" name="talla" id="talla-m" class="radio-talla" checked>
+                        <label for="talla-m" class="label-talla">M</label>
+
+                        <input type="radio" name="talla" id="talla-l" class="radio-talla">
+                        <label for="talla-l" class="label-talla">L</label>
+
+                        <input type="radio" name="talla" id="talla-xl" class="radio-talla">
+                        <label for="talla-xl" class="label-talla">XL</label>
+                    </div>
+                </div>
+            </div>
+            <footer class="comprar">
+                <button class="btn-kart">Agregar al carrito</button>
+            </footer>
+        </section>
+        <!-- producto 6 -->
+
+        <section class="caja-producto">
+            <div class="imagen-producto">
+                <img src="images/camiseta1.png" alt="camiseta" class="img-producto-detalle">
+            </div>
+
+            <div class="contenedor-info-producto">
+                <h2 class="titulo-producto-detalle">Camiseta Blanca con estampado The Horizon para mujer</h2>
+                <p class="precio-producto-detalle">$60.000 COP</p>
+
+                <div class="descripcion">
+                    <h3>Descripción</h3>
+                    <p>Fresca y casual. Estampado único para darle un toque creativo a tus días de estudio.</p>
+                </div>
+                <div class="seccion-tallas">
+                    <h3>Tallas</h3>
+                    <div class="selector-tallas">
+                        <input type="radio" name="talla" id="talla-s" class="radio-talla">
+                        <label for="talla-s" class="label-talla">S</label>
+
+                        <input type="radio" name="talla" id="talla-m" class="radio-talla" checked>
+                        <label for="talla-m" class="label-talla">M</label>
+
+                        <input type="radio" name="talla" id="talla-l" class="radio-talla">
+                        <label for="talla-l" class="label-talla">L</label>
+
+                        <input type="radio" name="talla" id="talla-xl" class="radio-talla">
+                        <label for="talla-xl" class="label-talla">XL</label>
+                    </div>
+                </div>
+            </div>
+            <footer class="comprar">
+                <button class="btn-kart">Agregar al carrito</button>
+            </footer>
+        </section>
+        <!-- producto 7 -->
+
+        <section class="caja-producto">
+            <div class="imagen-producto">
+                <img src="images/camiseta2.png" alt="camiseta" class="img-producto-detalle">
+            </div>
+
+            <div class="contenedor-info-producto">
+                <h2 class="titulo-producto-detalle">Camiseta con estampado 1957 para mujer</h2>
+                <p class="precio-producto-detalle">$40.000 COP</p>
+
+                <div class="descripcion">
+                    <h3>Descripción</h3>
+                    <p>Toque retro y ajuste perfecto. Hecha 100% de algodón transpirable para máxima comodidad.</p>
+                </div>
+                <div class="seccion-tallas">
+                    <h3>Tallas</h3>
+                    <div class="selector-tallas">
+                        <input type="radio" name="talla" id="talla-s" class="radio-talla">
+                        <label for="talla-s" class="label-talla">S</label>
+
+                        <input type="radio" name="talla" id="talla-m" class="radio-talla" checked>
+                        <label for="talla-m" class="label-talla">M</label>
+
+                        <input type="radio" name="talla" id="talla-l" class="radio-talla">
+                        <label for="talla-l" class="label-talla">L</label>
+
+                        <input type="radio" name="talla" id="talla-xl" class="radio-talla">
+                        <label for="talla-xl" class="label-talla">XL</label>
+                    </div>
+                </div>
+            </div>
+            <footer class="comprar">
+                <button class="btn-kart">Agregar al carrito</button>
+            </footer>
+        </section>
+        <!-- producto 8 -->
+
+        <section class="caja-producto">
+            <div class="imagen-producto">
+                <img src="images/camiseta3.png" alt="camiseta" class="img-producto-detalle">
+            </div>
+
+            <div class="contenedor-info-producto">
+                <h2 class="titulo-producto-detalle">Camiseta estampado margarita para mujer</h2>
+                <p class="precio-producto-detalle">$60.000 COP</p>
+
+                <div class="descripcion">
+                    <h3>Descripción</h3>
+                    <p>Dale un toque alegre a tu estilo con esta camiseta ligera y de tacto suave.</p>
+                </div>
+                <div class="seccion-tallas">
+                    <h3>Tallas</h3>
+                    <div class="selector-tallas">
+                        <input type="radio" name="talla" id="talla-s" class="radio-talla">
+                        <label for="talla-s" class="label-talla">S</label>
+
+                        <input type="radio" name="talla" id="talla-m" class="radio-talla" checked>
+                        <label for="talla-m" class="label-talla">M</label>
+
+                        <input type="radio" name="talla" id="talla-l" class="radio-talla">
+                        <label for="talla-l" class="label-talla">L</label>
+
+                        <input type="radio" name="talla" id="talla-xl" class="radio-talla">
+                        <label for="talla-xl" class="label-talla">XL</label>
+                    </div>
+                </div>
+            </div>
+            <footer class="comprar">
+                <button class="btn-kart">Agregar al carrito</button>
+            </footer>
+        </section>
+        <!-- producto 9 -->
+
+        <section class="caja-producto">
+            <div class="imagen-producto">
+                <img src="images/camiseta4.png" alt="camiseta" class="img-producto-detalle">
+            </div>
+
+            <div class="contenedor-info-producto">
+                <h2 class="titulo-producto-detalle">Camiseta Azul para hombre</h2>
+                <p class="precio-producto-detalle">$50.000 COP</p>
+
+                <div class="descripcion">
+                    <h3>Descripción</h3>
+                    <p>Comodidad para el día a día. Corte clásico que te permite moverte libremente entre facultades.</p>
+                </div>
+                <div class="seccion-tallas">
+                    <h3>Tallas</h3>
+                    <div class="selector-tallas">
+                        <input type="radio" name="talla" id="talla-s" class="radio-talla">
+                        <label for="talla-s" class="label-talla">S</label>
+
+                        <input type="radio" name="talla" id="talla-m" class="radio-talla" checked>
+                        <label for="talla-m" class="label-talla">M</label>
+
+                        <input type="radio" name="talla" id="talla-l" class="radio-talla">
+                        <label for="talla-l" class="label-talla">L</label>
+
+                        <input type="radio" name="talla" id="talla-xl" class="radio-talla">
+                        <label for="talla-xl" class="label-talla">XL</label>
+                    </div>
+                </div>
+            </div>
+            <footer class="comprar">
+                <button class="btn-kart">Agregar al carrito</button>
+            </footer>
+        </section>
+        <!-- producto 10 -->
+
+        <section class="caja-producto">
+            <div class="imagen-producto">
+                <img src="images/camiseta5.png" alt="camiseta" class="img-producto-detalle">
+            </div>
+
+            <div class="contenedor-info-producto">
+                <h2 class="titulo-producto-detalle">Camiseta Negra para hombre</h2>
+                <p class="precio-producto-detalle">$50.000 COP</p>
+
+                <div class="descripcion">
+                    <h3>Descripción</h3>
+                    <p>Básica, audaz y fácil de combinar. La prenda que te salva cuando no sabes qué ponerte.</p>
+                </div>
+                <div class="seccion-tallas">
+                    <h3>Tallas</h3>
+                    <div class="selector-tallas">
+                        <input type="radio" name="talla" id="talla-s" class="radio-talla">
+                        <label for="talla-s" class="label-talla">S</label>
+
+                        <input type="radio" name="talla" id="talla-m" class="radio-talla" checked>
+                        <label for="talla-m" class="label-talla">M</label>
+
+                        <input type="radio" name="talla" id="talla-l" class="radio-talla">
+                        <label for="talla-l" class="label-talla">L</label>
+
+                        <input type="radio" name="talla" id="talla-xl" class="radio-talla">
+                        <label for="talla-xl" class="label-talla">XL</label>
+                    </div>
+                </div>
+            </div>
+            <footer class="comprar">
+                <button class="btn-kart">Agregar al carrito</button>
+            </footer>
+        </section>
+        <!-- producto 11 -->
+
+        <section class="caja-producto">
+            <div class="imagen-producto">
+                <img src="images/pantalon1.png" alt="pantalon" class="img-producto-detalle">
+            </div>
+
+            <div class="contenedor-info-producto">
+                <h2 class="titulo-producto-detalle">Pantalón Blanco para mujer</h2>
+                <p class="precio-producto-detalle">$100.000 COP</p>
+
+                <div class="descripcion">
+                    <h3>Descripción</h3>
+                    <p>Resalta tu figura con un estilo fresco y luminoso. Tela elástica para aguantar largas jornadas.</p>
+                </div>
+                <div class="seccion-tallas">
+                    <h3>Tallas</h3>
+                    <div class="selector-tallas">
+                        <input type="radio" name="talla" id="talla-s" class="radio-talla">
+                        <label for="talla-s" class="label-talla">S</label>
+
+                        <input type="radio" name="talla" id="talla-m" class="radio-talla" checked>
+                        <label for="talla-m" class="label-talla">M</label>
+
+                        <input type="radio" name="talla" id="talla-l" class="radio-talla">
+                        <label for="talla-l" class="label-talla">L</label>
+
+                        <input type="radio" name="talla" id="talla-xl" class="radio-talla">
+                        <label for="talla-xl" class="label-talla">XL</label>
+                    </div>
+                </div>
+            </div>
+            <footer class="comprar">
+                <button class="btn-kart">Agregar al carrito</button>
+            </footer>
+        </section>
+        <!-- producto 12 -->
+
+        <section class="caja-producto">
+            <div class="imagen-producto">
+                <img src="images/pantalon2.png" alt="pantalon" class="img-producto-detalle">
+            </div>
+
+            <div class="contenedor-info-producto">
+                <h2 class="titulo-producto-detalle">Pantalon Negro para mujer</h2>
+                <p class="precio-producto-detalle">$90.000 COP</p>
+
+                <div class="descripcion">
+                    <h3>Descripción</h3>
+                    <p>El rey de la versatilidad. Úsalo para una presentación importante o para un día relajado de clases.</p>
+                </div>
+                <div class="seccion-tallas">
+                    <h3>Tallas</h3>
+                    <div class="selector-tallas">
+                        <input type="radio" name="talla" id="talla-s" class="radio-talla">
+                        <label for="talla-s" class="label-talla">S</label>
+
+                        <input type="radio" name="talla" id="talla-m" class="radio-talla" checked>
+                        <label for="talla-m" class="label-talla">M</label>
+
+                        <input type="radio" name="talla" id="talla-l" class="radio-talla">
+                        <label for="talla-l" class="label-talla">L</label>
+
+                        <input type="radio" name="talla" id="talla-xl" class="radio-talla">
+                        <label for="talla-xl" class="label-talla">XL</label>
+                    </div>
+                </div>
+            </div>
+            <footer class="comprar">
+                <button class="btn-kart">Agregar al carrito</button>
+            </footer>
+        </section>
+        <!-- producto 13 -->
+
+        <section class="caja-producto">
+            <div class="imagen-producto">
+                <img src="images/pantalon3.png" alt="pantalon" class="img-producto-detalle">
+            </div>
+
+            <div class="contenedor-info-producto">
+                <h2 class="titulo-producto-detalle">Jean Azul Claro para mujer</h2>
+                <p class="precio-producto-detalle">$80.000 COP</p>
+
+                <div class="descripcion">
+                    <h3>Descripción</h3>
+                    <p>Un toque relajado y vintage. Denim de alta calidad que se adapta a tu cuerpo cómodamente.</p>
+                </div>
+                <div class="seccion-tallas">
+                    <h3>Tallas</h3>
+                    <div class="selector-tallas">
+                        <input type="radio" name="talla" id="talla-s" class="radio-talla">
+                        <label for="talla-s" class="label-talla">S</label>
+
+                        <input type="radio" name="talla" id="talla-m" class="radio-talla" checked>
+                        <label for="talla-m" class="label-talla">M</label>
+
+                        <input type="radio" name="talla" id="talla-l" class="radio-talla">
+                        <label for="talla-l" class="label-talla">L</label>
+
+                        <input type="radio" name="talla" id="talla-xl" class="radio-talla">
+                        <label for="talla-xl" class="label-talla">XL</label>
+                    </div>
+                </div>
+            </div>
+            <footer class="comprar">
+                <button class="btn-kart">Agregar al carrito</button>
+            </footer>
+        </section>
+        <!-- producto 14 -->
+
+        <section class="caja-producto">
+            <div class="imagen-producto">
+                <img src="images/pantalon4.png" alt="pantalon" class="img-producto-detalle">
+            </div>
+
+            <div class="contenedor-info-producto">
+                <h2 class="titulo-producto-detalle">Blue Jean para hombre</h2>
+                <p class="precio-producto-detalle">$90.000 COP</p>
+
+                <div class="descripcion">
+                    <h3>Descripción</h3>
+                    <p>Resistencia y estilo en una sola prenda. Diseñado para el ritmo acelerado de la vida universitaria.</p>
+                </div>
+                <div class="seccion-tallas">
+                    <h3>Tallas</h3>
+                    <div class="selector-tallas">
+                        <input type="radio" name="talla" id="talla-s" class="radio-talla">
+                        <label for="talla-s" class="label-talla">S</label>
+
+                        <input type="radio" name="talla" id="talla-m" class="radio-talla" checked>
+                        <label for="talla-m" class="label-talla">M</label>
+
+                        <input type="radio" name="talla" id="talla-l" class="radio-talla">
+                        <label for="talla-l" class="label-talla">L</label>
+
+                        <input type="radio" name="talla" id="talla-xl" class="radio-talla">
+                        <label for="talla-xl" class="label-talla">XL</label>
+                    </div>
+                </div>
+            </div>
+            <footer class="comprar">
+                <button class="btn-kart">Agregar al carrito</button>
+            </footer>
+        </section>
+        <!-- producto 15 -->
+
+        <section class="caja-producto">
+            <div class="imagen-producto">
+                <img src="images/pantalon5.png" alt="pantalon" class="img-producto-detalle">
+            </div>
+
+            <div class="contenedor-info-producto">
+                <h2 class="titulo-producto-detalle">Pantalon Verde Oscuro para hombre</h2>
+                <p class="precio-producto-detalle">$110.000 COP</p>
+
+                <div class="descripcion">
+                    <h3>Descripción</h3>
+                    <p>Sal de la rutina del jean tradicional. Cómodo, moderno y con bolsillos prácticos.</p>
+                </div>
+                <div class="seccion-tallas">
+                    <h3>Tallas</h3>
+                    <div class="selector-tallas">
+                        <input type="radio" name="talla" id="talla-s" class="radio-talla">
+                        <label for="talla-s" class="label-talla">S</label>
+
+                        <input type="radio" name="talla" id="talla-m" class="radio-talla" checked>
+                        <label for="talla-m" class="label-talla">M</label>
+
+                        <input type="radio" name="talla" id="talla-l" class="radio-talla">
+                        <label for="talla-l" class="label-talla">L</label>
+
+                        <input type="radio" name="talla" id="talla-xl" class="radio-talla">
+                        <label for="talla-xl" class="label-talla">XL</label>
+                    </div>
+                </div>
+            </div>
+            <footer class="comprar">
+                <button class="btn-kart">Agregar al carrito</button>
+            </footer>
+        </section>
     </main>
 </body>
 </html>

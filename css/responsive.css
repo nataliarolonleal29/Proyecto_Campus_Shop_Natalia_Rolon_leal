@@ -1,0 +1,14 @@
+@media (min-width: 768px) {
+    main{
+        max-width: 600px;
+        margin: 0 auto;
+        border-left: 1px solid #eee;
+        border-right: 1px solid #eee;
+    }
+
+    .bottom-nav{
+        max-width: 600px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

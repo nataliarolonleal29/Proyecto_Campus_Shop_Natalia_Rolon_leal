@@ -1,5 +1,5 @@
 * {
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -20,6 +20,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--bg-main);
     color: var(--text-main);
+    overflow-x: hidden;
     line-height: 1.5;
     padding-bottom: 70px;
 }
@@ -31,4 +32,9 @@ a{
 
 ul{
     list-style: none;
+}
+
+img{
+    max-width: 100%;
+    display: block;
 }

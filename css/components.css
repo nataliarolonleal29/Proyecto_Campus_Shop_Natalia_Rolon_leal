@@ -1,48 +1,58 @@
-.menu-lateral-index{
-    display: none;
-}
-
-.menu-logo{
-    font-size: 1.8rem;
-    cursor: pointer;
-    position: absolute;
-    left: 20px;
-    z-index: 100;
-    color: var(--text-main);
-}
-
-.titulo-menu{
-    font-size: 1.4rem;
-    font-weight: bold;
-    color: var(--text-main);
-    margin: 0;
-    color: white;
-}
-
-.sidebar{
-    position: fixed;
-    top: 0;
-    left: -280px;
-    width: 260px;
-    height: 100%;
-    background: rgb(0, 0, 116);
-    z-index: 1000;
-    transition: 0.3s ease;
+.tarjeta-producto{
+    background-color: var(--bg-card);
+    border-radius: var(--radius-box);
+    padding: 15px;
+    text-align: center;
     box-shadow: var(--shadow-soft);
-    padding: 20px;
-}
-
-.sidebar-header{
+    position: relative;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+}
+
+.imagen-producto{
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    border-radius: var(--radius-btn);
+    margin-bottom: 10px;
+}
+
+/* carrito en index, catalogo y detalles producto */
+.carrito-logo{
+    width: 40px;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    margin-bottom: 30px;
+    text-decoration: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
 }
 
-.sidebar-logo{
-    width: 100px;
+/* carrito vacio */
+.boton-ver-catalogo{
+    display: inline-block;
+    background-color: rgb(70, 70, 255);
+    color: white;
+    padding: 12px 30px;
+    border-radius: var(--radius-btn);
+    text-decoration: none;
+    width: auto;
+    min-width: 200px;
+    max-width: 350px;
+    font-weight: bold;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
 }
 
+.boton-ver-catalogo:hover{
+    background-color: rgb(34, 34, 255);
+    cursor: pointer;
+}
+
+/* cerrar menu lateral */
 .btn-cerrar{
     font-size: 1.5rem;
     cursor: pointer;
@@ -52,114 +62,191 @@
     color: white;
 }
 
-.menu-links{
-    list-style: none;
-    padding: 0;
-}
-
-.menu-links li{
-    margin-bottom: 20px;
-}
-
-.menu-links a{
-    text-decoration: none;
-    color: white;
-    font-weight: 500;
-    font-size: 1.1rem;
-    display: block;
-}
-
-#menu-lateral:checked ~ .sidebar{
-    left: 0;
-}
-
-.overlay{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: var(--bg-card);
-    display: none;
-    z-index: 900;
-}
-
-#menu-lateral:checked ~ .overlay{
-    display: block;
-}
-
-.search-bar{
-    width: 100%;
-    padding: 12px 16px;
-    border: none;
-    border-radius: var(--radius-btn);
-    background-color: var(--bg-card);
-    box-shadow: var(--shadow-soft);
-    margin-bottom: 24px;
-    outline: none;
-}
-
-.fila-categorias{
+/* Carrito - Historial */
+.cart-item, .tarjeta-pedido{
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 32px;
-}
-
-.tarjeta-categoria{
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 8px;
-    font-size: 0.85rem;
-    font-weight: 600;
+    gap: 15px;
+    background: var(--bg-card);
+    border-radius: var(--radius-box);
+    width: 100%;
+    padding: 15px;   
+    margin-bottom: 15px;
+    box-shadow: var(--shadow-soft);
 }
 
-.categoria-logo{
-    width: 60px;
-    height: 60px;
-    background-color: var(--primary-light);
-    border-radius: 16px;
+.cart-item img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: var(--radius-btn);
+    flex-shrink: 0;
+    background: #f0f0f0;
+}
+
+.add-controls{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--bg-main);
+    padding: 4px 8px;
+    border-radius: 20px;
+}
+
+.add-controls span.minus{
+    cursor: not-allowed;
+}
+
+.add-controls span.plus{
+    cursor: pointer;
+}
+
+.btn-pedido{
+    background: white;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    padding: 10px 20px;
+    border-radius: var(--radius-btn);
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 0.85rem;
+    margin-top: 15px;
+}
+
+.btn-pedido:hover{
+    background: var(--primary-color);
+    color: white;
+    font-weight: bolder;
+    transition: 1.5s ease;
+    cursor: pointer;
+}
+
+/* Detalles de producto */
+.selector-tallas{
+    display: flex;
+    gap: 15px;
+}
+
+.radio-talla{
+    display: none;
+}
+
+.label-talla{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
-    color: var(--primary-color);
+    font-weight: bold;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-.productos-novedades{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
+.radio-talla:checked + .label-talla{
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
 }
 
-.tarjeta-producto{
-    background-color: var(--bg-card);
-    border-radius: var(--radius-box);
-    padding: 12px;
-    box-shadow: var(--shadow-soft);
-    position: relative;
+.body-productos{
+    overflow-x: hidden;
+}
+
+.main-producto{
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
+    padding-bottom: 100px;
 }
 
-.productos-catalogo{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
-    padding: 12px;
+.contenedor-imagen-producto{
     width: 100%;
-    box-sizing: border-box;
-    align-items: stretch;
+    height: 350px;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.grid-productos{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+.imagen-producto-detalle{
+    max-height: 280px;
+    object-fit: contain;
+}
+
+.contenedor-info-producto{
+    background-color: white;
+    border-radius: 25px 25px 0 0;
+    padding: 20px;
+    margin-top: -30px;
+    position: relative;
+    box-shadow: 0 -5px 15px rgba(0,0,0,0.05);
+    height: auto;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
     gap: 15px;
-    margin-bottom: 30px;
-    align-items: stretch;
+    flex-grow: 1;
+    z-index: 2;
 }
 
+.titulo-producto-detalle{
+    font-size: 1.4rem;
+    color: var(--text-main);
+    margin: 0 0 5px 0;
+}
+
+.precio-producto-detalle{
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin: 0 0 20px 0;
+}
+
+.descripcion h3, .seccion-tallas h3{
+    margin: 0 0 5px 0;
+    font-size: 1rem;
+    color: var(--text-main);
+}
+
+.descripcion p{
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+/* boton añadir carrito detalles del producto */
+.btn-kart{
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+.comprar{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    box-shadow: var(--shadow-soft);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 1000;
+}
+
+/* Catalogo */
 .titulo-categoria{
     margin: 25px 0 15px 0;
     font-size: 1.3rem;
@@ -183,15 +270,6 @@
     height: 150px;
     object-fit: cover;
     border-radius: 8px;
-}
-
-.imagen-producto{
-    width: 100%;
-    aspect-ratio: 1;
-    background-color: #eaeaea;
-    border-radius: var(--radius-btn);
-    object-fit: cover;
-    margin-bottom: 12px;
 }
 
 .titulo-producto{
@@ -255,6 +333,7 @@
     font-size: 16px;
 }
 
+/* Perfil */
 .foto-perfil{
     width: 100px;
     height: 100px;
@@ -263,57 +342,6 @@
     border: 3px solid #ffe0cc;
     display: block;
     margin: 0 auto;
-}
-
-.cart-item{
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    background: white;
-    border-radius: var(--radius-box);
-    width: 100%;
-    padding: 12px;   
-    margin-bottom: 12px;
-    box-shadow: var(--shadow-soft);
-    
-}
-
-.cart-item img{
-    width: 80px;
-    height: 80px;
-    object-fit: cover;
-    border-radius: var(--radius-btn);
-    flex-shrink: 0;
-    background: #f0f0f0;
-}
-
-.add-controls{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    background: var(--bg-main);
-    padding: 4px 8px;
-    border-radius: 20px;
-}
-
-.add-controls span.minus{
-    cursor: not-allowed;
-}
-
-.add-controls span.plus{
-    cursor: pointer;
-}
-
-.btn-pay{
-    background-color: var(--primary-color);
-    color: white;
-    border: none;
-    width: 100%;
-    padding: 16px;
-    border-radius: var(--radius-btn);
-    font-weight: bold;
-    font-size: 1rem;
-    cursor: pointer;
 }
 
 .opciones-perfil{
@@ -330,6 +358,7 @@
     box-shadow: var(--shadow-soft);
 }
 
+/* Carrito Vacio */
 .carrito-vacio-container h2{
     margin-bottom: 10px;
     font-weight: bold;
@@ -357,25 +386,7 @@
     opacity: 0.6;
 }
 
-.boton-ver-catalogo{
-    display: block;
-    background-color: rgb(70, 70, 255);
-    color: white;
-    padding: 15px 40px;
-    border-radius: var(--radius-btn);
-    text-decoration: none;
-    width: 100%;
-    max-width: 350px;
-    font-weight: bold;
-    justify-content: center;
-    align-items: center;
-}
-
-.boton-ver-catalogo:hover{
-    background-color: rgb(34, 34, 255);
-    cursor: pointer;
-}
-
+/* Checkout */
 .checkout-section{
     margin-bottom: 25px;
 }
@@ -390,14 +401,6 @@
 .checkout-header h4{
     font-size: 1rem;
     font-weight: bold;
-}
-
-.btn-edit{
-    background: none;
-    border: none;
-    color: var(--primary-color);
-    font-weight: bold;
-    cursor: pointer;
 }
 
 .tarjeta-checkout{
@@ -439,6 +442,43 @@
     color: var(--text-main);
 }
 
+.input-checkout:focus{
+    border-color: var(--primary-color);
+}
+
+#editar:checked ~ .formulario-edicion{
+    display: flex !important;
+}
+
+#editar:checked ~ .info-actual{
+    display: none !important;
+}
+
+#editar:checked ~ .checkout-header .btn-edit{
+    color: red;
+}
+
+/* guardar cambios formulario en checkout */
+.btn-save{
+    display: block;
+    background: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* editar formulario checkout */
+.btn-edit{
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    font-weight: bold;
+    cursor: pointer;
+}
+
 .input-oculto{
     display: none;
 }
@@ -462,44 +502,20 @@
     outline: none;
 }
 
-.input-checkout:focus{
-    border-color: var(--primary-color);
-}
-
-#editar:checked ~ .formulario-edicion{
-    display: flex !important;
-}
-
-#editar:checked ~ .info-actual{
-    display: none !important;
-}
-
-#editar:checked ~ .checkout-header .btn-edit{
-    color: red;
-}
-
-.btn-save{
-    display: block;
-    background: var(--primary-color);
+/* boton pagar checkout */
+.btn-pay{
+    background-color: var(--primary-color);
     color: white;
-    text-align: center;
-    padding: 10px;
-    border-radius: 8px;
-    margin-top: 10px;
+    border: none;
+    width: 100%;
+    padding: 16px;
+    border-radius: var(--radius-btn);
+    font-weight: bold;
+    font-size: 1rem;
     cursor: pointer;
 }
 
-.tarjeta-pedido{
-    background: white;
-    border-radius: var(--radius-box);
-    padding: 16px;
-    margin-bottom: 16px;
-    box-shadow: var(--shadow-soft);
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
+/* Historial */
 .pedido-header{
     display: flex;
     justify-content: space-between;
@@ -561,24 +577,4 @@
     font-size: 1.1rem;
     margin: 0;
     color: var(--text-main);
-}
-
-.btn-pedido{
-    background: white;
-    color: var(--primary-color);
-    border: 1px solid var(--primary-color);
-    padding: 10px 20px;
-    border-radius: var(--radius-btn);
-    font-weight: bold;
-    cursor: pointer;
-    font-size: 0.85rem;
-    margin-top: 15px;
-}
-
-.btn-pedido:hover{
-    background: var(--primary-color);
-    color: white;
-    font-weight: bolder;
-    transition: 1.5s ease;
-    cursor: pointer;
 }
