@@ -93,3 +93,7 @@ Es importante mantener este orden para que la aplicación cargue correctamente:
 ### Reflexión Final
 Este proyecto demuestra cómo una organización sólida del código CSS y una estructura HTML bien planeada pueden crear una experiencia de usuario de alta calidad. El mayor aprendizaje fue el manejo de Flexbox para resolver problemas de alineación y la importancia de separar los estilos en módulos (Base, Layout, Components) para escalar el diseño de manera eficiente. Campus Shop es ahora una base sólida para integrar en el futuro un sistema de Back-end real.
 El mayor desafío del proyecto fue estructurar una navegación compleja y elementos interactivos, como el menú lateral y los selectores de tallas, utilizando únicamente CSS puro, además de gestionar la superposición de capas para mantener un diseño limpio. Este proceso permitió consolidar aprendizajes clave en el uso avanzado de Flexbox y Grid, la importancia de la metodología Mobile-First para garantizar la responsividad y el valor de una arquitectura de archivos modular para facilitar el mantenimiento profesional del código.
+
+
+## Nota Examen 20 abril
+Para ingresar a la página de favoritos, se entra en el menú del footer de index, perfil y para ver los favoritos vacio, en catalogo y ahi si en favoritos.
